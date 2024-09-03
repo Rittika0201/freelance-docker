@@ -19,13 +19,35 @@
 > dokcer run -p 5000:5000 in28min/hello-world-nodejs:0.0.1.RELEASE
 
 # Run a Docker container with a Python Hello World Application in detached mode
-> docker run -p 5000:5000 in28min/hello-world-python:0.0.1.RELEASE
+> docker run -d -p 5000:5000 in28min/hello-world-python:0.0.1.RELEASE
 
 # Run a Docker container with Java Hello World Application in detached mode
-> docker run -p 5000:5000 in28min/hello-world-java:0.0.1.RELEASE
+> docker run -d -p 5000:5000 in28min/hello-world-java:0.0.1.RELEASE
 
 # Run a Docker container with a Node.js Hello World Application in detached mode
-> dokcer run -p 5000:5000 in28min/hello-world-nodejs:0.0.1.RELEASE
+> dokcer run -d -p 5000:5000 in28min/hello-world-nodejs:0.0.1.RELEASE
+
+# View the logs of a Docker container
+docker logs 04e52ff9270f5810eefe1f77222852dc1461c22440d4ecd6228b5c38f09d838e
+
+# View the logs of a Docker container with a given container ID or name
+docker logs c2ba
+
+# List Docker images
+docker images
+
+# List running containers
+docker container ls
+
+# List all containers, including stopped ones
+docker container ls -a
+
+# Stop a running container with a given container ID
+docker container stop f708b7ee1a8b
+
+
+
+
 
 
 
