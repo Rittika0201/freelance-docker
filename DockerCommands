@@ -45,6 +45,37 @@ docker container ls -a
 # Stop a running container with a given container ID
 docker container stop f708b7ee1a8b
 
+# Run a Docker container with a REST API in detached mode
+docker run -d -p 5001:8080 in28min/hello-world-rest-api:0.0.1.RELEASE
+
+# Pull a Docker image from a registry
+docker pull mysql
+
+# Search for Docker images in a registry
+docker search mysql
+
+# Show the history of a Docker image
+docker image history in28min/hello-world-java:0.0.1.RELEASE
+
+# Show the history of a Docker image with a given image ID
+docker image history 100229ba687e
+
+# Inspect a Docker image
+docker image inspect 100229ba687e
+
+# Remove a Docker image
+docker image remove mysql
+
+# Remove a Docker image with a given image name and tag
+docker image remove in28min/hello-world-java:0.0.1.RELEASE
+
+# Remove a Docker container with a given container ID or name
+docker container rm 3e657ae9bd16
+
+# List all containers, including stopped ones
+docker container ls -a
+
+
 
 
 
