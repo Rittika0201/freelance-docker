@@ -1,0 +1,11 @@
+# Install Docker on AWS EC2
+# create linux free tier eligible instance 
+> sudo su
+> sudo yum update -y
+> sudo yum install docker -y
+# Check the version of Docker installed 
+> docker --version
+# Run a Docker container with a Python Hello World Application
+> docker run -p 5000:5000 in28mins
+
+
